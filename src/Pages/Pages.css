@@ -1,3 +1,6 @@
-h1{
-  color: green;
+.HC{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  margin-left: 6rem;
 }

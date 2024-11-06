@@ -1,27 +1,33 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import "./App.css"
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/About';
+import Sidebar from './Components/Sidebar/Sidebar';
+import CD from './Pages/CD/CD';
 
 function App() {
   return (
-    <Router>
-			<nav style={{padding: "1rem", fontSize: "1.5rem"}}>
-				<Link to="/">Home</Link> | <Link to="/contact">Contact</Link> | <Link to="/about">About</Link>
-			</nav>
+    <div className='App-container'>
+    
+      <Router>
+        <div className='Sidebar-container' id='Sidebar-container'>
+          <Sidebar/>
+        </div>
+        <Routes>
+          <Route path='/' element={ <Home/> }/>
+          <Route path='/contact' element={ <Contact/> }/>
+          <Route path='/about' element={ <About/> }/>
+          <Route path='/cd' element={ <CD/> }/>
+        </Routes>
+        
 
-      <Routes>
-        <Route path='/' element={ <Home/> }/>
-        <Route path='/contact' element={ <Contact/> }/>
-        <Route path='/about' element={ <About/> }/>
-      </Routes>
-      
+        {/* <div className={styles.container}>
+          <AnimatedRoutes/>
+        </div> */}
 
-			{/* <div className={styles.container}>
-				<AnimatedRoutes/>
-			</div> */}
-
-		</Router>
+      </Router>
+    </div>
   );
 }
 
