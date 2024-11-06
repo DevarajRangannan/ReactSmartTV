@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.js --no-content-hash --dist-dir out --no-source-maps && cp index.html out/ ",
+    "build": "parcel build index.js --no-content-hash --dist-dir out --no-source-maps && cp index.html out/ && cp -r ./OS_Files/LG/* ./out/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
