@@ -1,3 +1,5 @@
+import React from 'react';
+
 import "../Pages.css"
 import "./Home.css"
 import Logo from "ASSETS/d-logo.png"
@@ -11,6 +13,7 @@ const Home = () => {
       <h1>Home Page</h1>
       <p>This is the Home Page.</p>
       <img src={Logo} alt="log" width={50} height={50} />
+      
     </div>
   );
 };

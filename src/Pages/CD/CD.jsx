@@ -1,3 +1,5 @@
+import React from 'react';
+
 import "../Pages.css"
 import "./CD.css"
 import { Link } from 'react-router-dom';

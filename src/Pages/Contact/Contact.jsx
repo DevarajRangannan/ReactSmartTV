@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+import React from 'react';
+
+// import { useEffect } from "react";
 import "../Pages.css"
 import "./Contact.css"
 
